@@ -8,11 +8,11 @@ void removeduplicates(string s)
 {
 	char t;
 	int k=s.length()-1;
-	for(string::size_type i=0;i<k;i++)
+	for(int i=0;i<k;i++)
 	{
 		if(s[i]=='\0')
 			continue;
-		for(string::size_type j=i+1;j<=k;j++)
+		for(int j=i+1;j<=k;j++)
 		{
 			if(s[i]==s[j])
 			{
